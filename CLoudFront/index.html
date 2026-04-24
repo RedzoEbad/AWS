@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Website</title>
+    <style>
+        :root {
+            color-scheme: light;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f4f7fb;
+            color: #1f2937;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #eef2ff 0%, #f8fafc 100%);
+        }
+        .page-container {
+            width: min(900px, 100%);
+            background: #ffffff;
+            border-radius: 24px;
+            box-shadow: 0 24px 60px rgba(15, 23, 42, 0.12);
+            overflow: hidden;
+            border: 1px solid rgba(148, 163, 184, 0.16);
+        }
+        .hero {
+            padding: 60px 48px;
+            text-align: center;
+        }
+        .hero h1 {
+            margin: 0;
+            font-size: clamp(2.5rem, 4vw, 4.2rem);
+            line-height: 1.05;
+            letter-spacing: -0.04em;
+            color: #0f172a;
+        }
+        .hero p {
+            margin: 20px auto 0;
+            max-width: 720px;
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: #475569;
+        }
+        .actions {
+            margin-top: 32px;
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 26px;
+            border-radius: 999px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .button-primary {
+            background: #4f46e5;
+            color: #ffffff;
+            box-shadow: 0 14px 30px rgba(79, 70, 229, 0.18);
+        }
+        .button-secondary {
+            background: rgba(99, 102, 241, 0.08);
+            color: #4f46e5;
+        }
+        .features {
+            display: grid;
+            gap: 24px;
+            padding: 0 48px 48px;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        }
+        .feature-card {
+            padding: 24px;
+            border-radius: 20px;
+            background: #f8fafc;
+            border: 1px solid rgba(148, 163, 184, 0.16);
+        }
+        .feature-card h2 {
+            margin: 0 0 10px;
+            font-size: 1.15rem;
+            color: #0f172a;
+        }
+        .feature-card p {
+            margin: 0;
+            color: #64748b;
+            line-height: 1.75;
+        }
+        @media (max-width: 640px) {
+            .hero {
+                padding: 40px 28px;
+            }
+            .features {
+                padding: 0 28px 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <section class="hero">
+            <h1>Build a clean, modern website in minutes</h1>
+            <p>Simple and elegant design for your homepage. Launch your site with a fresh layout, clear messaging, and strong calls to action.</p>
+            <div class="actions">
+                <a href="#" class="button button-primary">Get Started</a>
+                <a href="#" class="button button-secondary">See Features</a>
+            </div>
+        </section>
+        <section class="features">
+            <div class="feature-card">
+                <h2>Responsive design</h2>
+                <p>Looks great on mobile, tablet, and desktop with an adaptive layout that adjusts to every screen size.</p>
+            </div>
+            <div class="feature-card">
+                <h2>Fast & lightweight</h2>
+                <p>Optimized with minimal CSS and no external libraries so your page loads quickly for every visitor.</p>
+            </div>
+            <div class="feature-card">
+                <h2>Ready to customize</h2>
+                <p>Start with a polished homepage and tailor the colors, text, and sections to match your brand.</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
